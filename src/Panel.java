@@ -10,6 +10,7 @@ public class Panel extends JPanel{
 
 	private static final long serialVersionUID = -6540665032796165458L;
 	private static int W = 500,H = 500;
+	public final static int[] ROTMAT = {};
 	private int size = 30;
 	private int cols,rows;
 	
@@ -54,5 +55,21 @@ public class Panel extends JPanel{
 			panel.start();
 		}
 	}
+	
+	class Rect{
+		public int x,y,w,h;
+
+		public Rect(int x, int y, int w, int h) {
+			this.x = x;
+			this.y = y;
+			this.w = w;
+			this.h = h;
+		}
+		
+		public void rotate(double theta){
+			
+		}
+	}
+	
 
 }
